@@ -10,7 +10,7 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <div className={styles.brand}>
-          {letters.map((letter, i) => (
+          {letters.map((letter) => (
             <Letter
               key={letter.id}
               delay={letter.delay}
