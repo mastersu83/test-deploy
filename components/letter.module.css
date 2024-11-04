@@ -1,5 +1,8 @@
 .text3dDiora {
   color: #00a0e4;
+  -moz-transform: rotateY(30deg);
+  -webkit-transform: rotateY(30deg);
+  transform: rotateY(30deg);
   text-shadow: 1px 1px 1px #017db2, 1px 2px 1px #017db2, 1px 3px 1px #017db2,
     1px 4px 1px #017db2, 1px 5px 1px #017db2, 1px 6px 1px #017db2,
     1px 7px 1px #017db2, 1px 8px 1px #017db2, 1px 9px 1px #017db2,
@@ -9,10 +12,53 @@
 }
 .text3dKids {
   color: #ff0000;
+  -moz-transform: rotateY(30deg);
+  -webkit-transform: rotateY(30deg);
+  transform: rotateY(30deg);
   text-shadow: 1px 1px 1px #9d0101, 1px 2px 1px #9d0101, 1px 3px 1px #9d0101,
     1px 4px 1px #9d0101, 1px 5px 1px #9d0101, 1px 6px 1px #9d0101,
     1px 7px 1px #9d0101, 1px 8px 1px #9d0101, 1px 9px 1px #9d0101,
     1px 10px 1px #9d0101, 1px 18px 6px rgba(16, 16, 16, 0.4),
     1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
     1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+.text3dDiora.reflect {
+  z-index: 0;
+  opacity: 0.4;
+  -moz-transform: rotateX(180deg) rotateY(-30deg);
+  -webkit-transform: rotateX(180deg) rotateY(-30deg);
+  transform: rotateX(180deg) rotateY(-30deg);
+}
+
+.render {
+  white-space: nowrap;
+  display: inline-block;
+  z-index: 0;
+  position: relative;
+  line-height: 0.55em;
+  height: 0.61em;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -moz-transform: rotateY(30deg);
+  -webkit-transform: rotateY(30deg);
+  transform: rotateY(30deg);
+  font-family: "Bree Serif", serif;
+  font-size: 12em;
+  color: #00a0e4;
+  text-shadow: #0db2d3 0.006em 0.006em 1px, rgba(0, 0, 0, 0.15) -3px 7px 10px,
+    #017eb4 -1px 1px 1px, #017eb4 -2px 1px 1px, #017eb4 -3px 1px 1px,
+    #017eb4 -4px 1px 1px, #017eb4 -5px 1px 1px, #017eb4 -6px 1px 1px,
+    #017eb4 -7px 1px 1px, #017eb4 -8px 1px 1px, #017eb4 -9px 1px 1px,
+    #017eb4 -10px 1px 1px, #017eb4 -11px 1px 1px, #017eb4 -12px 1px 1px,
+    rgba(255, 255, 255, 0.6) -5px 2px 100px;
+}
+.render.reflect {
+  z-index: 0;
+  opacity: 0.4;
+  -moz-transform: rotateX(180deg) rotateY(-30deg);
+  -webkit-transform: rotateX(180deg) rotateY(-30deg);
+  transform: rotateX(180deg) rotateY(-30deg);
 }

@@ -1,9 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
 import styles from "./page.module.css";
 import { Letter } from "@/components/Letter";
 import { letters } from "@/consts/letters";
+import Marquee from "react-fast-marquee";
 
 export default function Home() {
   return (
@@ -19,14 +19,14 @@ export default function Home() {
             />
           ))}
         </div>
-        <motion.div
-          initial={{ x: -1000, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          className={styles.description}
+        <Marquee
+          speed={100}
+          style={{ display: "flex", alignItems: "start", height: "100%" }}
         >
-          На сайте проводятся работы по ребрендингу, доступ будет восстановлен в
-          ближайшее время
-        </motion.div>
+          <div className={styles.description}>
+            На сайте проводятся работы по ребрендингу
+          </div>
+        </Marquee>
       </main>
     </div>
   );

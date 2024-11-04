@@ -9,22 +9,24 @@ interface ILetter {
 
 export const Letter = ({ letter, delay, color }: ILetter) => {
   return (
-    <motion.div
-      style={{
-        color: color ? "#ff0000" : "#00a0e4",
-      }}
-      className={!color ? styles.text3dDiora : styles.text3dKids}
-      animate={{ rotateY: 360 }}
-      transition={{
-        delay,
-        duration: 3,
-        repeat: Infinity,
-        repeatDelay: 8,
-        type: "spring",
-        repeatType: "loop",
-      }}
-    >
-      {letter}
-    </motion.div>
+    <div>
+      <motion.div
+        style={{
+          color: color ? "#ff0000" : "#00a0e4",
+        }}
+        className={!color ? styles.text3dDiora : styles.text3dKids}
+        animate={{ rotateY: 360 }}
+        transition={{
+          delay,
+          duration: 3,
+          repeat: Infinity,
+          repeatDelay: 8,
+          type: "spring",
+          repeatType: "loop",
+        }}
+      >
+        {letter}
+      </motion.div>
+    </div>
   );
 };
