@@ -25,6 +25,15 @@
     1px 10px 10px rgba(16, 16, 16, 0.4);
 }
 
+@media (max-width: 1550px) {
+  .brand {
+    font-size: 240px;
+  }
+  .description {
+    font-size: 48px;
+  }
+}
+
 @media (max-width: 1025px) {
   .brand {
     font-size: 160px;
