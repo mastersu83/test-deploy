@@ -33,7 +33,7 @@
     font-size: 32px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 840px) {
   .brand {
     font-size: 120px;
   }
@@ -42,7 +42,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 620px) {
   .brand {
     font-size: 60px;
   }
