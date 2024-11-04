@@ -21,7 +21,10 @@ export default function Home() {
         </div>
         <Marquee
           speed={100}
-          style={{ display: "flex", alignItems: "start", height: "100%" }}
+          style={{
+            display: "flex",
+            alignItems: "start",
+          }}
         >
           <div className={styles.description}>
             На сайте проводятся работы по ребрендингу

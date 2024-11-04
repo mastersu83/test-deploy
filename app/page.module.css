@@ -6,6 +6,7 @@
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  row-gap: 10px;
 }
 
 .brand {
@@ -16,7 +17,7 @@
 }
 
 .description {
-  font-size: 32px;
+  font-size: 56px;
   color: #3b3934;
   text-shadow: 1px 1px 1px #d9c6a5, 1px 2px 1px #d9c6a5, 1px 3px 1px #d9c6a5,
     1px 4px 1px #d9c6a5, 1px 5px 1px #d9c6a5, 1px 6px 6px rgba(16, 16, 16, 0.4),
@@ -37,7 +38,7 @@
     font-size: 120px;
   }
   .description {
-    font-size: 24px;
+    font-size: 32px;
   }
 }
 
