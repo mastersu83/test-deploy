@@ -45,8 +45,6 @@
   -moz-transform: rotateY(30deg);
   -webkit-transform: rotateY(30deg);
   transform: rotateY(30deg);
-  font-family: "Bree Serif", serif;
-  font-size: 12em;
   color: #00a0e4;
   text-shadow: #0db2d3 0.006em 0.006em 1px, rgba(0, 0, 0, 0.15) -3px 7px 10px,
     #017eb4 -1px 1px 1px, #017eb4 -2px 1px 1px, #017eb4 -3px 1px 1px,

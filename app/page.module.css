@@ -23,3 +23,29 @@
     1px 8px 10px rgba(16, 16, 16, 0.2), 1px 8px 15px rgba(16, 16, 16, 0.2),
     1px 10px 10px rgba(16, 16, 16, 0.4);
 }
+
+@media (max-width: 1025px) {
+  .brand {
+    font-size: 160px;
+  }
+  .description {
+    font-size: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .brand {
+    font-size: 120px;
+  }
+  .description {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand {
+    font-size: 60px;
+  }
+  .description {
+    font-size: 16px;
+  }
+}
